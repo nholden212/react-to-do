@@ -7,7 +7,7 @@ class App extends Component {
     super(props);
     this.state = {
       todos: [
-        {description: 'Be fucking awesome', isCompleted: true },
+        {description: 'Be awesome', isCompleted: true },
         {description: 'Throw the dishes away', isCompleted: false },
         {description: 'Buy new dishes', isCompleted: false }
       ],
@@ -43,7 +43,7 @@ class App extends Component {
         </ul>
         <form onSubmit={ (e) => this.handleSubmit(e) }>
           <input type="text" value={ this.state.newTodoDescription } onChange={ (e) => this.handleChange(e) } />
-          <input type="sumbit" />
+          <input type="submit" />
         </form>
       </div>
     );
